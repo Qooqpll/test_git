@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list-item {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.container {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+.form-pizza-wrapper {
+    margin: 15px;
+}
+
+form {
+    margin-top: 50px;
+    display:  flex;
+    justify-content: center;
+}
+
+.checkbox {
+    height: 30px;
+}
+.list-cart {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

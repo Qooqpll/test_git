@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-pizza">
+        <form onsubmit="return false">
+            <div class="form-pizza-wrapper">
+                <p>Выбор пиццы</p>
+                <select name="" id="type" onchange="typeSelected(this), getPrice(this)">
+                    <option value="-" selected>Не выбрано</option>
+                    <option value="Пепперони" data-price="1000">Пепперони</option>
+                    <option value="Деревенская" data-price="1200">Деревенская</option>
+                    <option value="Гавайская" data-price="1300">Гавайская</option>
+                    <option value="Грибная" data-price="900">Грибная</option>
+                </select>
+            </div>
+           <div class="form-pizza-wrapper">
+               <p>Выбор размера</p>
+               <select name="" id="size" onchange="typeSelected(this), getPrice(this)">
+                   <option value="-" selected>Не выбрано</option>
+                   <option value="21" id="defaultPrice" data-price="0">21</option>
+                   <option value="26" data-price="500">26</option>
+                   <option value="31" data-price="700">31</option>
+                   <option value="45" data-price="1000">45</option>
+               </select>
+           </div>
+           <div class="form-pizza-wrapper">
+               <p>Выбор соуса</p>
+               <select name="" id="sauce" onchange="typeSelected(this), getPrice(this)">
+                   <option value="-" selected>Не выбрано</option>
+                   <option value="сырный" data-price="200">сырный</option>
+                   <option value="кисло-сладкий" data-price="250">кисло-сладкий</option>
+                   <option value="чесночный" data-price="300">чесночный</option>
+                   <option value="барбекю" data-price="150">барбекю</option>
+               </select>
+           </div>
+           <div class="form-pizza-wrapper">
+               <input type="submit" onClick="checkout()" class="checkbox" disabled>
+           </div>
+        </form>
+        <div class="list-cart">
+            <h3>Корзина</h3>
+            <ul id="list">
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/script.js">
+
+
+</script>
+</body>
+</html>
